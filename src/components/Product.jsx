@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import Pagination from "./Pagination.jsx";
 import FiltersModal from "./FiltersModal.jsx";
 
-const API_BASE = "https://92.112.180.231:6042";
+const API_BASE = "https://portal-of-memories.site:6042";
 const PAGE_SIZE = 12;
 
 

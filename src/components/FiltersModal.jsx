@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
-const API_BASE = "https://92.112.180.231:6042";
+const API_BASE = "http://portal-of-memories.site:6042";
 const PAGE_SIZE = 10;
 
 export default function FiltersModal({
