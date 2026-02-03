@@ -138,8 +138,15 @@ export default function ProductsPage() {
                     <button
                         type="button"
                         onClick={() => setFiltersOpen(true)}
-                        className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50">
+                        className="m-2 rounded-xl bg-gradient-to-r from-zinc-800 to-zinc-900 px-5 py-2.5 text-sm font-semibold text-white hover:from-zinc-900 hover:to-black transition-all"
+                    >
                         Filters
+                        {(selectedBrands.length > 0 || selectedCategories.length > 0) && (
+                            <span
+                                className="ml-2 inline-flex items-center justify-center w-5 h-5 text-xs bg-white text-zinc-900 rounded-full">
+                                    {selectedBrands.length + selectedCategories.length}
+                                </span>
+                        )}
                     </button>
 
                     <div className="p-6">
@@ -179,7 +186,7 @@ export default function ProductsPage() {
                 search={qFromUrl}
                 selectedBrands={selectedBrands}
                 selectedCategories={selectedCategories}
-                onApply={({ brands, categories }) => {
+                onApply={({brands, categories}) => {
                     setSelectedBrands(brands);
                     setSelectedCategories(categories);
                     setPage(0);

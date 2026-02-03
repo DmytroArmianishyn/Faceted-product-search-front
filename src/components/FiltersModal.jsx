@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
-const API_BASE = "http://portal-of-memories.site:6042";
+const API_BASE = "https://portal-of-memories.site:6042";
 const PAGE_SIZE = 10;
 
 export default function FiltersModal({
@@ -263,7 +263,7 @@ export default function FiltersModal({
                             <button
                                 type="button"
                                 onClick={handleClear}
-                                className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-zinc-50"
+                                className="rounded-xl bg-zinc-900 px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-800"
                             >
                                 Clear
                             </button>
